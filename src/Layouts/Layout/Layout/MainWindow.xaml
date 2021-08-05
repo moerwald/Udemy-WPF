@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Layout"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        <StackPanel Orientation="Vertical" Margin="15">
+        <Button Content="Button1"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5" Background="Green">
+                <Button Content="Button3" Margin="10"/>
+                <Button Content="Button4" Margin="10" Height="30"/>
+            </StackPanel>
+            <Button Content="Button2"/>
+        </StackPanel>
 </Window>
