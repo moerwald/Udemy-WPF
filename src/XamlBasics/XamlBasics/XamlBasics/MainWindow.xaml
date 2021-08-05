@@ -8,6 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btn_test" Content="Click Me" HorizontalAlignment="Center" Margin="0,169,0,0" VerticalAlignment="Top" Background="Green"/>
+        <StackPanel>
+            <Label>Markup Extension Sample</Label>
+            <Button Width="140" Height="40" Content="{Binding ElementName=slider_test, Path=Value}"/>
+            <Slider x:Name="slider_test" Value="0"/>
+        </StackPanel>
 
     </Grid>
 </Window>
