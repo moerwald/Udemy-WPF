@@ -6,11 +6,15 @@
         xmlns:local="clr-namespace:TextBlock"
         mc:Ignorable="d"
         Title="MainWindow" Height="259" Width="144">
-    <Grid >
-        <TextBlock TextWrapping="Wrap" >
-            Hallo Welt. Dies ist ein sehr langer Text, der über mehrere Zeilen gehen soll.
-            Um dies zu ermöglichen verwenden wird das TextWrapping Attribut.
+    <StackPanel >
+        <TextBlock TextWrapping="Wrap" Margin="10" >
+            Text wrapping activ. No text gets trimmed.
         </TextBlock>
-
-    </Grid>
+        <TextBlock TextTrimming="WordEllipsis"  Margin="10">
+            Text trimming. This text is not shown.
+        </TextBlock>
+        <TextBlock Margin="10">
+            No text trimming at all. This text is not shown.
+        </TextBlock>
+    </StackPanel>
 </Window>
