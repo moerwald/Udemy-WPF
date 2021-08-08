@@ -1,0 +1,21 @@
+﻿<Window x:Class="Buton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Buton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Click="Button_Click" Margin="50,5,50,0">Click me</Button>
+        <Label x:Name="_lblHelloWorld"/>
+
+        <StackPanel Background="DarkCyan" Margin="10">
+            <Button x:Name="btnRed" Content="Red" Click="BtnRed_Click" Margin="5"/>
+            <Button x:Name="btnGreen" Content="Green" Click="BtnGreen_Click" Margin="5"/>
+            <Button x:Name="btnBlue" Content="Blue" Click="BtnBlue_Click" Margin="5"/>
+            <Button x:Name="btnReset" Content="Reset" Click="BtnReset_Click" Margin="5"/>
+
+        </StackPanel>
+    </StackPanel>
+</Window>
