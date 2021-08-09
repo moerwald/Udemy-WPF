@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Label", "Label\Label.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buton", "Buton\Buton.csproj", "{4E166867-7B30-4873-B246-F7EB240D5E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBox", "TextBox\TextBox.csproj", "{4AEC1813-DC2F-4B45-957F-886C3AAD104D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextBox", "TextBox\TextBox.csproj", "{4AEC1813-DC2F-4B45-957F-886C3AAD104D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollView", "ScrollView\ScrollView.csproj", "{7681345F-7C70-436A-92F0-3E5604D94262}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4AEC1813-DC2F-4B45-957F-886C3AAD104D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AEC1813-DC2F-4B45-957F-886C3AAD104D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AEC1813-DC2F-4B45-957F-886C3AAD104D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7681345F-7C70-436A-92F0-3E5604D94262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7681345F-7C70-436A-92F0-3E5604D94262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7681345F-7C70-436A-92F0-3E5604D94262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7681345F-7C70-436A-92F0-3E5604D94262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

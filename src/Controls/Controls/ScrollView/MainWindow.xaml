@@ -1,0 +1,38 @@
+﻿<Window x:Class="ScrollView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScrollView"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10" >
+
+            <Label Margin="5">_Name:</Label>
+            <Border Margin="5" BorderThickness="1" BorderBrush="Green">
+                <TextBlock/>
+            </Border>
+
+            <Label Margin="5">_Age:</Label>
+            <Border Margin="5" BorderThickness="1" BorderBrush="Green">
+                <TextBlock/>
+            </Border>
+
+            <Label Margin="5">_City:</Label>
+            <Border Margin="5" BorderThickness="1" BorderBrush="Green">
+                <TextBlock/>
+            </Border>
+
+            <Label Margin="5">_Street:</Label>
+            <Border Margin="5" BorderThickness="1" BorderBrush="Green">
+                <TextBlock/>
+            </Border>
+
+            <CheckBox Margin="5">I accept license agreements</CheckBox>
+            <CheckBox Margin="5" IsChecked="True">Send me newsletter</CheckBox>
+
+            <Button Margin="5">Register</Button>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
