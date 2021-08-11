@@ -1,0 +1,63 @@
+﻿<Window x:Class="Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Resources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+
+    <Window.Resources>
+        <Image Source="image/settings.png" Width="50" Height="50" x:Key="settingsPng" />
+        <SolidColorBrush Color="Violet" x:Key="dynamicSolidColorBrush"/>
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Background="Yellow">
+            <StackPanel Background="Green" Margin="10">
+                <Label Margin="5">Button with static Window resource</Label>
+                <Button Margin="10" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{StaticResource settingsPng}"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="16" Margin="10">Settings</TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Background="LightBlue" Margin="10">
+                <Label Margin="5">Button with static APP resource</Label>
+                <Button Margin="10" HorizontalAlignment="Left">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{StaticResource atSign}"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="16" Margin="10">MailTo</TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Background="LightCoral" Margin="10">
+                <StackPanel.Resources>
+                    <LinearGradientBrush x:Key="brush">
+                        <GradientStop Color="Green" Offset="0.5"/>
+                        <GradientStop Color="Yellow" Offset="0.25"/>
+                    </LinearGradientBrush>
+                </StackPanel.Resources>
+
+                <Label Margin="5">Button with static Control resource</Label>
+                <Button Background="{StaticResource brush}" Foreground="White" Content="TEST" Margin="10"/>
+                <Button Background="{StaticResource brush}" Foreground="White" Content="TEST2" Margin="10"/>
+            </StackPanel>
+
+            <StackPanel Margin="10" Background="{DynamicResource dynamicSolidColorBrush}">
+                <StackPanel.Resources>
+                    <LinearGradientBrush x:Key="brush">
+                        <GradientStop Color="Green" Offset="0.5"/>
+                        <GradientStop Color="Yellow" Offset="0.25"/>
+                    </LinearGradientBrush>
+                </StackPanel.Resources>
+
+                <Label Margin="5">Button dynamic Windows resource</Label>
+                <Button Click="Button_Click" Background="Gold" Foreground="White" Content="Click me to change dynamic resource" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
