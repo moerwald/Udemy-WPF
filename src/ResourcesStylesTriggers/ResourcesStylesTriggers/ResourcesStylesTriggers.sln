@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{80A67125-74E3-4076-9E7A-F301098C0788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{80A67125-74E3-4076-9E7A-F301098C0788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styles", "Styles\Styles.csproj", "{458A2636-5324-474F-9DEB-9C32030A9D7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{80A67125-74E3-4076-9E7A-F301098C0788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A67125-74E3-4076-9E7A-F301098C0788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80A67125-74E3-4076-9E7A-F301098C0788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458A2636-5324-474F-9DEB-9C32030A9D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458A2636-5324-474F-9DEB-9C32030A9D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458A2636-5324-474F-9DEB-9C32030A9D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458A2636-5324-474F-9DEB-9C32030A9D7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
