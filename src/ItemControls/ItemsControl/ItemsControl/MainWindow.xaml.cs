@@ -33,10 +33,15 @@ namespace ItemsControl
 
             itemsControl.ItemsSource = _persons;
             lstBoxPersonControl.ItemsSource = _persons;
+            comboBoxPersonControl.ItemsSource = _persons;
         }
 
         private void LstBoxPersonControl_SelectionChanged(object sender, SelectionChangedEventArgs e) => 
             lblSelectedItem.Content = (lstBoxPersonControl.SelectedItem as Person)?.Name ?? "undef";
+
+        private void ComboBoxPersonControl_SelectionChanged(object sender, SelectionChangedEventArgs e) =>
+            lblSelectedItem2.Content = (comboBoxPersonControl.SelectedItem as Person)?.Name ?? "undef";
+
     }
 
 
