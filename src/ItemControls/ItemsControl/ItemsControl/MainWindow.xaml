@@ -54,5 +54,18 @@
                 <Label x:Name="lblSelectedItem2"/>
             </WrapPanel>
         </StackPanel>
+
+        <StackPanel>
+            <TreeView>
+                <TreeViewItem Header="Emploees">
+                    <TreeViewItem Header="Andy"/>
+                    <TreeViewItem Header="Andy"/>
+                    <TreeViewItem Header="Andy"/>
+
+
+
+                </TreeViewItem> 
+            </TreeView>
+        </StackPanel>
     </StackPanel>
 </Window>
