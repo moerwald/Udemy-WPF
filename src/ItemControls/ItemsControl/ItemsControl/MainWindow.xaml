@@ -26,5 +26,14 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
+
+        <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
+            <ListBox.ItemTemplate>
+            <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label x:Name="lblSelectedItem"/>
     </StackPanel>
 </Window>

@@ -32,7 +32,11 @@ namespace ItemsControl
             InitializeComponent();
 
             itemsControl.ItemsSource = _persons;
+            lstBoxPersonControl.ItemsSource = _persons;
         }
+
+        private void LstBoxPersonControl_SelectionChanged(object sender, SelectionChangedEventArgs e) => 
+            lblSelectedItem.Content = (lstBoxPersonControl.SelectedItem as Person)?.Name ?? "undef";
     }
 
 
