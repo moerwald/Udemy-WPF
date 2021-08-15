@@ -27,28 +27,32 @@
             </ItemsControl.ItemTemplate>
         </ItemsControl>
 
-        <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Name}"/>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <WrapPanel>
-            <Label Content="Auswahl:"/>
-            <Label x:Name="lblSelectedItem"/>
-        </WrapPanel>
+        <StackPanel Background="Violet" Margin="5">
+            <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <WrapPanel>
+                <Label Content="Auswahl:"/>
+                <Label x:Name="lblSelectedItem"/>
+            </WrapPanel>
+        </StackPanel>
 
-        <ComboBox x:Name="comboBoxPersonControl" SelectionChanged="ComboBoxPersonControl_SelectionChanged" >
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Name}"/>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
-        <WrapPanel>
-            <Label Content="Auswahl:"/>
-            <Label x:Name="lblSelectedItem2"/>
-        </WrapPanel>
+        <StackPanel Background="Yellow" Margin="5">
+            <ComboBox x:Name="comboBoxPersonControl" SelectionChanged="ComboBoxPersonControl_SelectionChanged" >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <WrapPanel>
+                <Label Content="Auswahl:"/>
+                <Label x:Name="lblSelectedItem2"/>
+            </WrapPanel>
+        </StackPanel>
     </StackPanel>
 </Window>
