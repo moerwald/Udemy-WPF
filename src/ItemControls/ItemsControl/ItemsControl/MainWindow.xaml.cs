@@ -34,6 +34,15 @@ namespace ItemsControl
             itemsControl.ItemsSource = _persons;
             lstBoxPersonControl.ItemsSource = _persons;
             comboBoxPersonControl.ItemsSource = _persons;
+
+            var treeViewItemRoot = new TreeViewItem { Header = "Some Header" };
+            tvForCode.Items.Add(treeViewItemRoot);
+
+            treeViewItemRoot.Items.Add("Str1");
+            treeViewItemRoot.Items.Add("Str2");
+            var tv2 = new TreeViewItem { Header = "Some Other Headedr" };
+            treeViewItemRoot.Items.Add(tv2);
+            tv2.Items.Add("Str3");
         }
 
         private void LstBoxPersonControl_SelectionChanged(object sender, SelectionChangedEventArgs e) => 

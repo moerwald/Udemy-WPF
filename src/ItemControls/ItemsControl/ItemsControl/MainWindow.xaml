@@ -92,6 +92,11 @@
                     </TreeView>
                 </StackPanel>
             </TabItem>
+
+
+            <TabItem Header="TreeView Build via Code" >
+                <TreeView x:Name="tvForCode"/>
+            </TabItem>
         </TabControl>
 
     </StackPanel>
