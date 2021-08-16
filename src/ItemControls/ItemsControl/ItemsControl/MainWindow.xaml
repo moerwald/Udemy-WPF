@@ -9,7 +9,7 @@
 
     <StackPanel>
         <TabControl>
-            <TabItem Header="XXX">
+            <TabItem Header="ItemsControl Base">
                 <ItemsControl x:Name="itemsControl">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
@@ -31,7 +31,7 @@
 
             </TabItem>
 
-            <TabItem Header="YYYY">
+            <TabItem Header="ListBox with SelChangedEvt">
                 <StackPanel Background="Violet" Margin="5">
                     <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
                         <ListBox.ItemTemplate>
@@ -47,7 +47,7 @@
                 </StackPanel>
             </TabItem>
 
-            <TabItem Header="ZZZZZ">
+            <TabItem Header="ComboBox">
                 <StackPanel Background="Yellow" Margin="5">
                     <ComboBox x:Name="comboBoxPersonControl" SelectionChanged="ComboBoxPersonControl_SelectionChanged" >
                         <ComboBox.ItemTemplate>
@@ -62,16 +62,32 @@
                     </WrapPanel>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="UUUU">
+            <TabItem Header="TreeView">
                 <StackPanel>
                     <TreeView>
-                        <TreeViewItem Header="Emploees">
-                            <TreeViewItem Header="Andy"/>
-                            <TreeViewItem Header="Andy"/>
-                            <TreeViewItem Header="Andy"/>
-
-
-
+                        <TreeViewItem Header="Emploees" IsExpanded="True">
+                            <TreeViewItem Header="Andy">
+                                <TreeViewItem Header="Age 23"/>
+                                <TreeViewItem Header="Job: Developer"/>
+                            </TreeViewItem>
+                            <TreeViewItem Header="Susan">
+                                <TreeViewItem Header="Age 30"/>
+                                <TreeViewItem Header="Job: Developer"/>
+                            </TreeViewItem>
+                            <TreeViewItem Header="Bob">
+                                <TreeViewItem Header="Age 50"/>
+                                <TreeViewItem Header="Job: Manager"/>
+                                <TreeViewItem>
+                                    <TreeViewItem.Header>
+                                        <Border BorderThickness="3" BorderBrush="Black" >
+                                            <WrapPanel Margin="5">
+                                                <TextBlock Margin="5">TEST</TextBlock>
+                                                <Button Margin="5" >Click Me</Button>
+                                            </WrapPanel>
+                                        </Border>
+                                    </TreeViewItem.Header>
+                                </TreeViewItem>
+                            </TreeViewItem>
                         </TreeViewItem>
                     </TreeView>
                 </StackPanel>
