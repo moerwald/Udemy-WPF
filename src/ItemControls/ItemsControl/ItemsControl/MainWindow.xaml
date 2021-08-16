@@ -8,64 +8,75 @@
         Title="MainWindow" Height="450" Width="800">
 
     <StackPanel>
-        <ItemsControl x:Name="itemsControl">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
+        <TabControl>
+            <TabItem Header="XXX">
+                <ItemsControl x:Name="itemsControl">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
 
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Border BorderThickness="1" BorderBrush="Black" Margin="5" Padding="5" CornerRadius="5">
-                        <StackPanel>
-                            <TextBlock Text="{Binding Name}"/>
-                            <TextBlock Text="{Binding Age}"/>
-                        </StackPanel>
-                    </Border>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderThickness="1" BorderBrush="Black" Margin="5" Padding="5" CornerRadius="5">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding Age}"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
 
-        <StackPanel Background="Violet" Margin="5">
-            <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Name}"/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-            <WrapPanel>
-                <Label Content="Auswahl:"/>
-                <Label x:Name="lblSelectedItem"/>
-            </WrapPanel>
-        </StackPanel>
+            </TabItem>
 
-        <StackPanel Background="Yellow" Margin="5">
-            <ComboBox x:Name="comboBoxPersonControl" SelectionChanged="ComboBoxPersonControl_SelectionChanged" >
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Name}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-            <WrapPanel>
-                <Label Content="Auswahl:"/>
-                <Label x:Name="lblSelectedItem2"/>
-            </WrapPanel>
-        </StackPanel>
+            <TabItem Header="YYYY">
+                <StackPanel Background="Violet" Margin="5">
+                    <ListBox x:Name="lstBoxPersonControl" SelectionChanged="LstBoxPersonControl_SelectionChanged" >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <WrapPanel>
+                        <Label Content="Auswahl:"/>
+                        <Label x:Name="lblSelectedItem"/>
+                    </WrapPanel>
+                </StackPanel>
+            </TabItem>
 
-        <StackPanel>
-            <TreeView>
-                <TreeViewItem Header="Emploees">
-                    <TreeViewItem Header="Andy"/>
-                    <TreeViewItem Header="Andy"/>
-                    <TreeViewItem Header="Andy"/>
+            <TabItem Header="ZZZZZ">
+                <StackPanel Background="Yellow" Margin="5">
+                    <ComboBox x:Name="comboBoxPersonControl" SelectionChanged="ComboBoxPersonControl_SelectionChanged" >
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <WrapPanel>
+                        <Label Content="Auswahl:"/>
+                        <Label x:Name="lblSelectedItem2"/>
+                    </WrapPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="UUUU">
+                <StackPanel>
+                    <TreeView>
+                        <TreeViewItem Header="Emploees">
+                            <TreeViewItem Header="Andy"/>
+                            <TreeViewItem Header="Andy"/>
+                            <TreeViewItem Header="Andy"/>
 
 
 
-                </TreeViewItem> 
-            </TreeView>
-        </StackPanel>
+                        </TreeViewItem>
+                    </TreeView>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
     </StackPanel>
 </Window>
